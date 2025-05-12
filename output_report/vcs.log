@@ -1,0 +1,1218 @@
+Command: vcs -l vcs.log -timescale=1ns/1ps -sverilog -ntb_opts uvm -debug_access+all \
+-full64 -kdb -lca -P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+../rtl/full_adder.v ../rtl/interface.sv +define+WRAPPING_INCR +incdir+../tb +incdir+../test \
++incdir+../agt +incdir+../rtl ../test/pkg.sv ../tb/top.sv
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP1_Full64 -- Mon May 12 11:06:09 2025
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/snps_macros.svp'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '../rtl/full_adder.v'
+Parsing design file '../rtl/interface.sv'
+Parsing design file '../test/pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../tb/tb_config.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/xtn.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/seq.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/mon.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/drv.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/seqr.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../agt/agt.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../tb/sb.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../tb/env.sv'.
+Back to file '../test/pkg.sv'.
+Parsing included file '../test/test.sv'.
+Back to file '../test/pkg.sv'.
+Parsing design file '../tb/top.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../tb/top.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module uvm_custom_install_verdi_recording
+recompiling module full_adder
+recompiling module inf
+recompiling package pack
+recompiling module top
+All of 10 modules done
+make[1]: Entering directory '/home1/B109/TChakradhar/chakri_vlsi_practice/uvm_verification_full_adder/sim/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib -L/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o \
+_3676431_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-lvcsnew -lsimprofile -luclinative /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_save_restore_new.o \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home1/B109/TChakradhar/chakri_vlsi_practice/uvm_verification_full_adder/sim/csrc' \
+
+CPU time: 20.219 seconds to compile + .604 seconds to elab + 1.661 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Command: /home1/B109/TChakradhar/chakri_vlsi_practice/uvm_verification_full_adder/sim/./simv -a vcs.log +fsdbfile+wave1.fsdb -cm_dir ./mem_cov1 +ntb_random_seed_automatic +UVM_TESTNAME=test
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  May 12 11:07 2025
+NOTE: automatic random seed used: 899100895
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               test                        -     @462 
+  env_h                    env                         -     @472 
+    agh[0]                 agent                       -     @485 
+      drvh                 driver                      -     @559 
+        rsp_port           uvm_analysis_port           -     @576 
+        seq_item_port      uvm_seq_item_pull_port      -     @567 
+      monh                 monitor                     -     @708 
+        ap                 uvm_analysis_port           -     @716 
+      seqh                 seqr                        -     @585 
+        rsp_export         uvm_analysis_export         -     @593 
+        seq_item_export    uvm_seq_item_pull_imp       -     @699 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    sb_h                   sb                          -     @493 
+      a_fifo               uvm_tlm_analysis_fifo #(T)  -     @501 
+        analysis_export    uvm_analysis_imp            -     @545 
+        get_ap             uvm_analysis_port           -     @536 
+        get_peek_export    uvm_get_peek_imp            -     @518 
+        put_ap             uvm_analysis_port           -     @527 
+        put_export         uvm_put_imp                 -     @509 
+------------------------------------------------------------------
+
+"../tb/top.sv", 21: top.unnamed$$_0: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b0) -> ((top.inf_h.sum == 1'b0) && (top.inf_h.carry == 1'b0)))'
+Error: "../tb/top.sv", 21: top.unnamed$$_0: at time 0 ps
+000: Expected sum=0, carry=0
+"../tb/top.sv", 24: top.unnamed$$_1: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b1) -> ((top.inf_h.sum == 1'b1) && (top.inf_h.carry == 1'b0)))'
+Error: "../tb/top.sv", 24: top.unnamed$$_1: at time 0 ps
+001: Expected sum=1, carry=0
+"../tb/top.sv", 27: top.unnamed$$_2: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b010) -> ((top.inf_h.sum == 1'b1) && (top.inf_h.carry == 1'b0)))'
+Error: "../tb/top.sv", 27: top.unnamed$$_2: at time 0 ps
+010: Expected sum=1, carry=0
+"../tb/top.sv", 30: top.unnamed$$_3: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b011) -> ((top.inf_h.sum == 1'b0) && (top.inf_h.carry == 1'b1)))'
+Error: "../tb/top.sv", 30: top.unnamed$$_3: at time 0 ps
+011: Expected sum=0, carry=1
+"../tb/top.sv", 33: top.unnamed$$_4: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b100) -> ((top.inf_h.sum == 1'b1) && (top.inf_h.carry == 1'b0)))'
+Error: "../tb/top.sv", 33: top.unnamed$$_4: at time 0 ps
+100: Expected sum=1, carry=0
+"../tb/top.sv", 36: top.unnamed$$_5: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b101) -> ((top.inf_h.sum == 1'b0) && (top.inf_h.carry == 1'b1)))'
+Error: "../tb/top.sv", 36: top.unnamed$$_5: at time 0 ps
+101: Expected sum=0, carry=1
+"../tb/top.sv", 39: top.unnamed$$_6: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b110) -> ((top.inf_h.sum == 1'b0) && (top.inf_h.carry == 1'b1)))'
+Error: "../tb/top.sv", 39: top.unnamed$$_6: at time 0 ps
+110: Expected sum=0, carry=1
+"../tb/top.sv", 42: top.unnamed$$_7: started at 0ps failed at 0ps
+	Offending '(({top.inf_h.a, top.inf_h.b, top.inf_h.c} == 3'b111) -> ((top.inf_h.sum == 1'b1) && (top.inf_h.carry == 1'b1)))'
+Error: "../tb/top.sv", 42: top.unnamed$$_7: at time 0 ps
+111: Expected sum=1, carry=1
+UVM_INFO ../agt/drv.sv(47) @ 0: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @740                                
+  begin_time                   time      64    0                                   
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 1000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @768 
+  a      integral  1     1    
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 37.50%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 1000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=1, c=0 => sum=0, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 1000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @773                                
+  begin_time                   time      64    1000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 2000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @777 
+  a      integral  1     'd0  
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 75.00%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 2000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=1, c=0 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 2000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @781                                
+  begin_time                   time      64    2000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     1                                   
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 3000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @785 
+  a      integral  1     1    
+  b      integral  1     1    
+  c      integral  1     1    
+  sum    integral  1     1    
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 79.17%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 3000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=1, c=1 => sum=1, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 3000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @789                                
+  begin_time                   time      64    3000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 4000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @793 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 83.33%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 4000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=0 => sum=0, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 4000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @797                                
+  begin_time                   time      64    4000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 5000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @801 
+  a      integral  1     'd0  
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 83.33%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 5000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=1, c=0 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 5000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @805                                
+  begin_time                   time      64    5000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 6000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @809 
+  a      integral  1     1    
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 87.50%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 6000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=0, c=0 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 6000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @813                                
+  begin_time                   time      64    6000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 7000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @817 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 87.50%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 7000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=0 => sum=0, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 7000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @821                                
+  begin_time                   time      64    7000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 8000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @825 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     1    
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 8000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=1 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 8000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @829                                
+  begin_time                   time      64    8000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 9000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @833 
+  a      integral  1     1    
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 9000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=1, c=0 => sum=0, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 9000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @837                                
+  begin_time                   time      64    9000                                
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 10000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @841 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 10000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=0 => sum=0, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 10000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @845                                
+  begin_time                   time      64    10000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 11000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @849 
+  a      integral  1     1    
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 11000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=0, c=0 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 11000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @853                                
+  begin_time                   time      64    11000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     1                                   
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 12000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @857 
+  a      integral  1     1    
+  b      integral  1     1    
+  c      integral  1     1    
+  sum    integral  1     1    
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 12000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=1, c=1 => sum=1, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 12000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @861                                
+  begin_time                   time      64    12000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 13000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @865 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     1    
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 91.67%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 13000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=1 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 13000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @869                                
+  begin_time                   time      64    13000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     1                                   
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 14000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @873 
+  a      integral  1     'd0  
+  b      integral  1     1    
+  c      integral  1     1    
+  sum    integral  1     'd0  
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 14000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=1, c=1 => sum=0, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 14000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @877                                
+  begin_time                   time      64    14000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 15000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @881 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 15000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=0 => sum=0, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 15000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @885                                
+  begin_time                   time      64    15000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 16000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @889 
+  a      integral  1     1    
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 16000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=1, c=0 => sum=0, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 16000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @893                                
+  begin_time                   time      64    16000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     1                                   
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 17000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @897 
+  a      integral  1     'd0  
+  b      integral  1     1    
+  c      integral  1     'd0  
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 17000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=1, c=0 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 17000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @901                                
+  begin_time                   time      64    17000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     'd0                                 
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 18000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @905 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     'd0  
+  sum    integral  1     'd0  
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 18000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=0 => sum=0, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 18000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @909                                
+  begin_time                   time      64    18000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     'd0                                 
+  b                            integral  1     'd0                                 
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 19000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @913 
+  a      integral  1     'd0  
+  b      integral  1     'd0  
+  c      integral  1     1    
+  sum    integral  1     1    
+  carry  integral  1     'd0  
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 95.83%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 19000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=0, b=0, c=1 => sum=1, carry=0
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO ../agt/drv.sv(47) @ 19000: uvm_test_top.env_h.agh[0].drvh [DRIVER] Printing from driver:
+-----------------------------------------------------------------------------------
+Name                           Type      Size  Value                               
+-----------------------------------------------------------------------------------
+req                            xtn       -     @917                                
+  begin_time                   time      64    19000                               
+  depth                        int       32    'd2                                 
+  parent sequence (name)       string    5     seq_h                               
+  parent sequence (full name)  string    36    uvm_test_top.env_h.agh[0].seqh.seq_h
+  sequencer                    string    30    uvm_test_top.env_h.agh[0].seqh      
+  a                            integral  1     1                                   
+  b                            integral  1     'd0                                 
+  c                            integral  1     1                                   
+  sum                          integral  1     'd0                                 
+  carry                        integral  1     'd0                                 
+-----------------------------------------------------------------------------------
+
+UVM_INFO ../agt/mon.sv(55) @ 20000: uvm_test_top.env_h.agh[0].monh [MONITOR] Printing from Monitor:
+------------------------------
+Name     Type      Size  Value
+------------------------------
+tx       xtn       -     @921 
+  a      integral  1     1    
+  b      integral  1     'd0  
+  c      integral  1     1    
+  sum    integral  1     'd0  
+  carry  integral  1     1    
+------------------------------
+
+------------------------------------------------------------------------------------------
+Updated Coverage for Each transaction       : 100.00%
+------------------------------------------------------------------------------------------
+-----------------------------------------------SCORE BOARD--------------------------------------------------------
+UVM_INFO ../tb/sb.sv(35) @ 20000: uvm_test_top.env_h.sb_h [SCOREBOARD] Match Passed: a=1, b=0, c=1 => sum=0, carry=1
+------------------------------------------------------------------------------------------------------------------
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 20000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+------------------------------------------------------------------------------------------
+Final Coverage       : 100.00%
+------------------------------------------------------------------------------------------
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   63
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRIVER]    20
+[MONITOR]    20
+[RNTST]     1
+[SCOREBOARD]    20
+[TEST_DONE]     1
+[UVMTOP]     1
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time                20000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 20000 ps
+CPU Time:      0.630 seconds;       Data structure size:   0.6Mb
+Mon May 12 11:07:20 2025
